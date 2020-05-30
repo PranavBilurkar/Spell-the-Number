@@ -1,6 +1,5 @@
 c:\users\pranav\documents\visual studio 2012\Projects\SpellTheNumber\SpellTheNumber\bin\Debug\SpellTheNumber.exe.config
 c:\users\pranav\documents\visual studio 2012\Projects\SpellTheNumber\SpellTheNumber\bin\Debug\SpellTheNumber.exe
 c:\users\pranav\documents\visual studio 2012\Projects\SpellTheNumber\SpellTheNumber\bin\Debug\SpellTheNumber.pdb
-c:\users\pranav\documents\visual studio 2012\Projects\SpellTheNumber\SpellTheNumber\obj\Debug\SpellTheNumber.csprojResolveAssemblyReference.cache
 c:\users\pranav\documents\visual studio 2012\Projects\SpellTheNumber\SpellTheNumber\obj\Debug\SpellTheNumber.exe
 c:\users\pranav\documents\visual studio 2012\Projects\SpellTheNumber\SpellTheNumber\obj\Debug\SpellTheNumber.pdb

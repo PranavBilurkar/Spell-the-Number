@@ -31,7 +31,7 @@ namespace SpellTheNumber
                 unit = (int)(value / NumberSystem.Quadrillion);
                 value -= unit * NumberSystem.Quadrillion;
 
-                builder.AppendFormat("{0}{1} Quadrillion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+                builder.AppendFormat("{0}{1} quadrillion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
             if (value >= NumberSystem.Trillion)
@@ -39,7 +39,7 @@ namespace SpellTheNumber
                 unit = (int)(value / NumberSystem.Trillion);
                 value -= unit * NumberSystem.Trillion;
 
-                builder.AppendFormat("{0}{1} Trillion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+                builder.AppendFormat("{0}{1} trillion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
             if (value >= NumberSystem.Billion)
@@ -47,7 +47,7 @@ namespace SpellTheNumber
                 unit = (int)(value / NumberSystem.Billion);
                 value -= unit * NumberSystem.Billion;
 
-                builder.AppendFormat("{0}{1} Billion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+                builder.AppendFormat("{0}{1} billion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
             if (value >= NumberSystem.Million)
@@ -55,7 +55,7 @@ namespace SpellTheNumber
                 unit = (int)(value / NumberSystem.Million);
                 value -= unit * NumberSystem.Million;
 
-                builder.AppendFormat("{0}{1} Million", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+                builder.AppendFormat("{0}{1} million", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
             if (value >= NumberSystem.Thousand)
@@ -63,7 +63,7 @@ namespace SpellTheNumber
                 unit = (int)(value / NumberSystem.Thousand);
                 value -= unit * NumberSystem.Thousand;
 
-                builder.AppendFormat("{0}{1} Thousand", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+                builder.AppendFormat("{0}{1} thousand", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
             if (value >= NumberSystem.Hundred)
@@ -71,7 +71,7 @@ namespace SpellTheNumber
                 unit = (int)(value / NumberSystem.Hundred);
                 value -= unit * NumberSystem.Hundred;
 
-                builder.AppendFormat("{0}{1} Hundred", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+                builder.AppendFormat("{0}{1} hundred", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
             if (builder.Length > 0 && value > 0) builder.AppendFormat(" and");
