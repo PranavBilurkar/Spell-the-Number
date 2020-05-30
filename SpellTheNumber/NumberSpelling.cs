@@ -11,13 +11,13 @@ namespace SpellTheNumber
       
         public static string ToSpell(this long value)
         {
-            
-            #region Negative and zero rule
-            if (value == 0) return "zero";
+
+           #region Negative and zero rule
+            if (value == 0) return "Zero";
 
             if (value < 0)
             {
-                return "negative value not allowed and should be whole number";
+                return "Negative value not allowed and should be a whole number";
             } 
             #endregion
 
