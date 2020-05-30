@@ -130,6 +130,26 @@ namespace Maersk
                 builder.AppendFormat("{0}twenty", builder.Length > 0 ? " " : string.Empty);
             }
 
+            if (value == 19) builder.AppendFormat("{0}nineteen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 18) builder.AppendFormat("{0}eighteen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 17) builder.AppendFormat("{0}seventeen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 16) builder.AppendFormat("{0}sixteen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 15) builder.AppendFormat("{0}fifteen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 14) builder.AppendFormat("{0}fourteen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 13) builder.AppendFormat("{0}thirteen", builder.Length > 0 ? " " : string.Empty);
+            if (value == 12) builder.AppendFormat("{0}twelve", builder.Length > 0 ? " " : string.Empty);
+            if (value == 11) builder.AppendFormat("{0}eleven", builder.Length > 0 ? " " : string.Empty);
+            if (value == 10) builder.AppendFormat("{0}ten", builder.Length > 0 ? " " : string.Empty);
+            if (value == 9) builder.AppendFormat("{0}nine", builder.Length > 0 ? " " : string.Empty);
+            if (value == 8) builder.AppendFormat("{0}eight", builder.Length > 0 ? " " : string.Empty);
+            if (value == 7) builder.AppendFormat("{0}seven", builder.Length > 0 ? " " : string.Empty);
+            if (value == 6) builder.AppendFormat("{0}six", builder.Length > 0 ? " " : string.Empty);
+            if (value == 5) builder.AppendFormat("{0}five", builder.Length > 0 ? " " : string.Empty);
+            if (value == 4) builder.AppendFormat("{0}four", builder.Length > 0 ? " " : string.Empty);
+            if (value == 3) builder.AppendFormat("{0}three", builder.Length > 0 ? " " : string.Empty);
+            if (value == 2) builder.AppendFormat("{0}two", builder.Length > 0 ? " " : string.Empty);
+            if (value == 1) builder.AppendFormat("{0}one", builder.Length > 0 ? " " : string.Empty);
+
             return builder.ToString();
         }
     }
