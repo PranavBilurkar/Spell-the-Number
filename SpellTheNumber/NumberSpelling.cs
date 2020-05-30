@@ -50,6 +50,30 @@ namespace Maersk
                 builder.AppendFormat("{0}{1} Billion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
+            if (value >= NumberSystem.Million)
+            {
+                unit = (int)(value / NumberSystem.Million);
+                value -= unit * NumberSystem.Million;
+
+                builder.AppendFormat("{0}{1} Million", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+            }
+
+            if (value >= NumberSystem.Thousand)
+            {
+                unit = (int)(value / NumberSystem.Thousand);
+                value -= unit * NumberSystem.Thousand;
+
+                builder.AppendFormat("{0}{1} Thousand", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+            }
+
+            if (value >= NumberSystem.Hundred)
+            {
+                unit = (int)(value / NumberSystem.Hundred);
+                value -= unit * NumberSystem.Hundred;
+
+                builder.AppendFormat("{0}{1} Hundred", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+            }
+
             return builder.ToString();
         }
     }
