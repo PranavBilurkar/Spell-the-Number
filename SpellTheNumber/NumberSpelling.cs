@@ -74,6 +74,41 @@ namespace Maersk
                 builder.AppendFormat("{0}{1} Hundred", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
+            if (value >= 90)
+            {
+                value -= 90;
+
+                builder.AppendFormat("{0}ninety", builder.Length > 0 ? " " : string.Empty);
+            }
+
+            if (value >= 80)
+            {
+                value -= 80;
+
+                builder.AppendFormat("{0}eighty", builder.Length > 0 ? " " : string.Empty);
+            }
+
+            if (value >= 70)
+            {
+                value -= 70;
+
+                builder.AppendFormat("{0}seventy", builder.Length > 0 ? " " : string.Empty);
+            }
+
+            if (value >= 60)
+            {
+                value -= 60;
+
+                builder.AppendFormat("{0}sixty", builder.Length > 0 ? " " : string.Empty);
+            }
+
+            if (value >= 50)
+            {
+                value -= 50;
+
+                builder.AppendFormat("{0}fifty", builder.Length > 0 ? " " : string.Empty);
+            }
+
             return builder.ToString();
         }
     }
