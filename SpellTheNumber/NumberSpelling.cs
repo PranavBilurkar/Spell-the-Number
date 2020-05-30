@@ -74,6 +74,8 @@ namespace SpellTheNumber
                 builder.AppendFormat("{0}{1} Hundred", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
             }
 
+            if (builder.Length > 0 && value > 0) builder.AppendFormat(" and");
+
             if (value >= 90)
             {
                 value -= 90;
