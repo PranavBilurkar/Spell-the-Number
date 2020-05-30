@@ -24,6 +24,32 @@ namespace Maersk
             //String Builder
             System.Text.StringBuilder builder = new StringBuilder();
 
+            int unit = 0;
+
+            if (value >= NumberSystem.Quadrillion)
+            {
+                unit = (int)(value / NumberSystem.Quadrillion);
+                value -= unit * NumberSystem.Quadrillion;
+
+                builder.AppendFormat("{0}{1} Quadrillion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+            }
+
+            if (value >= NumberSystem.Trillion)
+            {
+                unit = (int)(value / NumberSystem.Trillion);
+                value -= unit * NumberSystem.Trillion;
+
+                builder.AppendFormat("{0}{1} Trillion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+            }
+
+            if (value >= NumberSystem.Billion)
+            {
+                unit = (int)(value / NumberSystem.Billion);
+                value -= unit * NumberSystem.Billion;
+
+                builder.AppendFormat("{0}{1} Billion", builder.Length > 0 ? " " : string.Empty, ToSpell(unit));
+            }
+
             return builder.ToString();
         }
     }
