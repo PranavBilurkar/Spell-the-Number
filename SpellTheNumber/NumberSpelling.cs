@@ -25,24 +25,40 @@ namespace SpellTheNumber
                 }
                 #endregion
 
-                //String Builder
+                if ((number / NumberSystem.Quadrillion) > 0)
+                {
+                    spellBuilder.Append(ToSpell(number / NumberSystem.Quadrillion) + " quadrillion ");
+                    number %= NumberSystem.Quadrillion;
+                }
+
+                if ((number / NumberSystem.Trillion) > 0)
+                {
+                    spellBuilder.Append(ToSpell(number / NumberSystem.Trillion) + " trillion ");
+                    number %= NumberSystem.Trillion;
+                }
+
+                if ((number / NumberSystem.Billion) > 0)
+                {
+                    spellBuilder.Append(ToSpell(number / NumberSystem.Billion) + " billion ");
+                    number %= NumberSystem.Billion;
+                }
 
                 if ((number / NumberSystem.Million) > 0)
                 {
                     spellBuilder.Append(ToSpell(number / NumberSystem.Million) + " million ");
-                    number %= 1000000;
+                    number %= NumberSystem.Million;
                 }
 
                 if ((number / NumberSystem.Thousand) > 0)
                 {
                     spellBuilder.Append(ToSpell(number / NumberSystem.Thousand) + " thousand ");
-                    number %= 1000;
+                    number %= NumberSystem.Thousand;
                 }
 
                 if ((number / NumberSystem.Hundred) > 0)
                 {
                     spellBuilder.Append(ToSpell(number / NumberSystem.Hundred) + " hundred ");
-                    number %= 100;
+                    number %= NumberSystem.Hundred;
                 }
 
                 if (number > 0)
