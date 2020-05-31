@@ -26,7 +26,6 @@ namespace SpellTheNumber.Tests
             string Expected = "thirteen thousand four hundred and fifty six";
             var result = NumberSpelling.ToSpell(13456);
             Assert.AreEqual(Expected, result);
-
         }
     }
 }

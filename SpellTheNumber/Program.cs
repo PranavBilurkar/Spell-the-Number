@@ -10,12 +10,20 @@ namespace SpellTheNumber
     {
         static void Main(string[] args)
         {
-            long inputNumber;
-            Console.Write("Enter number to convert in word: ");
-            inputNumber = Convert.ToInt32(Console.ReadLine());
-            string outputWord = NumberSpelling.ToSpell(inputNumber);
-            Console.WriteLine(outputWord);
-            Console.ReadLine();
+            try
+            {
+                long inputNumber;
+                Console.Write("Enter number to convert in word: ");
+                inputNumber = Convert.ToInt32(Console.ReadLine());
+                string outputWord = NumberSpelling.ToSpell(inputNumber);
+                Console.WriteLine(outputWord);
+                Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+           
         }
     }
 }
