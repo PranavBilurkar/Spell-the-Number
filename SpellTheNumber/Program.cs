@@ -14,7 +14,7 @@ namespace SpellTheNumber
             {
                 long inputNumber;
                 Console.Write("Enter number to convert in word: ");
-                inputNumber = Convert.ToInt32(Console.ReadLine());
+                inputNumber = long.Parse(Console.ReadLine());
                 string outputWord = NumberSpelling.ToSpell(inputNumber);                
                 Console.WriteLine(outputWord);
                 Console.ReadLine();
